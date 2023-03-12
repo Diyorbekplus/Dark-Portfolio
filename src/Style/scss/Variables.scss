@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+$mainFont:'Tilt Neon', cursive;
+
+@mixin line {
+    margin: 5rem auto;
+    width: 90%;
+    height: 3px;
+    color: transparent;
+    background: #111;
+    border-radius: 3px;
+}

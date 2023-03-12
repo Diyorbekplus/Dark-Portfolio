@@ -1,0 +1,161 @@
+@import "./Variables.scss";
+.home {
+    padding:2rem 5rem;
+    .home_body {
+        margin-top: 5rem;
+        color: white;
+        font-family: $mainFont;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        .details {
+            h6 {
+                font-size: 1.7rem;
+                font-weight: 400;
+                color: rgb(221, 250, 250);
+                margin-bottom: 2rem;
+            }
+            h1 {
+                color: white;
+                margin-top: 1.5rem;
+                font-size: 3rem;
+                font-weight: 500;
+                line-height: 2rem;
+            }
+            p {
+                margin-top: 2rem;
+                font-size: 1.2rem;
+                color: rgb(221, 250, 250);
+            }
+            .buttons {
+                width: 100%;
+                a {
+                    margin: 0.5rem;
+                    padding: 0.5rem 2rem;
+                    border-radius: 0.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                a:nth-child(1) {
+                    border: 1px solid #111;
+                }
+                a:nth-child(2) {
+                    background: coral;
+                    
+                }
+            }
+        }
+        .status_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 28rem;
+                border: 1rem solid #2c3234;
+                border-radius: 2rem;
+                box-shadow: 1px 1px 40px #171a1c,
+                -1px -1px 40px #171a1c,
+            }
+        }
+    }
+    .line {
+        @include line;
+    }
+}
+@media screen and (max-width:1200px) {
+   .home {
+    padding: 2rem 2rem;
+    .status_img {
+        img {
+            width: 25rem;
+        }
+   } 
+}
+@media screen and (max-width:991px) {
+    .home {
+        padding: 2rem 1rem;
+        .home_body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .details {
+            max-width: 30rem;
+            margin: auto;
+            margin-top: 5rem;
+            grid-row: 2 / -1;            
+            p {
+                text-align: justify;
+            }
+        }
+        .status_img {
+            grid-row: 1 / 2;
+        }
+     }
+    } 
+ }
+ @media screen and (max-width:600px) {
+    .home {
+     .home_body {
+        padding: 2rem 1rem;
+        .details {
+            max-width: 25rem;
+            text-align: center;
+            h6 {
+                font-size: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+                line-height: 1rem;
+            }
+        }
+        .status_img {
+            img {
+                width: 20rem;
+                border: 0.5rem solid #101010;
+            }
+        }
+     }
+    } 
+}
+@media screen and (max-width:450px) {
+    .home {
+     .home_body {
+        padding: 2rem 1rem;
+        .details {
+            max-width: 25rem;
+            text-align: center;
+            h6 {
+                font-size: 1.3rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1rem;
+            }
+             p{
+                font-size: 1rem;
+             }
+
+             .buttons {
+                width: 100%;
+                a {
+                    margin: 0.5rem;
+                    padding: 0.5rem 1rem;
+                    text-decoration: none;
+                }
+                a:nth-child(1) {
+                    border: 1px solid #111;
+                }
+                a:nth-child(2) {
+                    background: coral;
+                    
+                }
+            }
+        }
+        .status_img {
+            img {
+                width: 17rem;
+                border: 0.5rem solid #101010;
+            }
+        }
+     }
+    } 
+}
+}

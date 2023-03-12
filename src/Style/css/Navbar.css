@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Tilt Neon", cursive;
+  padding: 1rem;
+}
+.navbar .navbar_brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.navbar .navbar_brand img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #2c3234;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar .navbar_brand span {
+  margin-left: 1rem;
+  color: coral;
+}
+.navbar .navbar-toggler {
+  outline: none;
+  font-size: 2rem;
+  color: #2f3537;
+  padding: 0;
+  border: none;
+}
+.navbar .navbar_nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.navbar .navbar_nav li {
+  margin: auto 1rem;
+  font-size: 2rem;
+}
+.navbar .navbar_nav li a {
+  text-decoration: none;
+  color: #383d3e;
+  text-shadow: 1px 1px 17px #2c3234;
+  -webkit-text-stroke: 0.8px #000;
+}
+.navbar .navbar_nav li a:hover {
+  color: #fff;
+  -webkit-text-stroke: 0px #000;
+}
+.navbar .navbar_nav-small {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .navbar_nav {
+    display: none;
+  }
+  .navbar .navbar_nav-small {
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+  }
+  .navbar .navbar_nav-small .navbar-toggler {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    outline: none;
+    padding: 2px;
+  }
+  .navbar .navbar_nav-small .navbar-toggler:focus {
+    outline: none;
+    border: none;
+    outline: 5px solid #2f3537;
+  }
+  .navbar .navbar_nav-small li {
+    width: 100%;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar_nav-small li a {
+    text-decoration: none;
+    color: #383d3e;
+    text-shadow: 1px 1px 17px #2c3234;
+  }
+  .navbar .navbar_nav-small li a:hover {
+    color: #fff;
+  }
+}
+@media screen and (max-height: 400px) {
+  .navbar .navbar_nav-small li {
+    margin: 0.2rem;
+  }
+}

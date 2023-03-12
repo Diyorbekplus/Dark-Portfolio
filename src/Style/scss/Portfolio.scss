@@ -1,0 +1,125 @@
+@import "./Variables.scss";
+.portfolio {
+    font-family: $mainFont;
+    padding:2rem 5rem;
+    .portolio_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: coral;
+            text-align: center;
+        }
+        h1  {
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(221, 250, 250);
+        }
+    }
+    .portfolio_body {
+        margin-top: 3rem;
+        .carousel {
+            min-height: 30rem;
+            padding: 0;
+            padding-bottom: 4rem;
+            background: #111;
+            border-radius: 2rem;
+            box-shadow: 
+            5px 5px 25px rgb(25, 25, 25),
+            -5px 5px 25px rgb(25, 25, 25),
+            5px -5px 25px rgb(25, 25, 25),
+            -5px -5px 25px rgb(25, 25, 25);
+            .carousel-indicators {
+                button {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+            .carousel-inner {
+                border-radius: 2rem;
+                .carousel-item {
+                    position: relative;
+                    .carousel-caption {
+                        display: none;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        backdrop-filter: blur(16px) saturate(180%);
+                        -webkit-backdrop-filter: blur(16px) saturate(180%);
+                        background-color: rgba(27, 36, 51, 0.75);
+                        border-radius: 12px;
+                        border: 1px solid coral;
+                        min-height: 10rem;
+                        &:hover {
+                            display: flex;
+                        }
+                        h5 {
+                            color: coral;
+                            font-size: 2rem;
+                        }
+                        p {
+                            a {
+                                font-size: 1.3rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    img {
+                        padding: 5rem;
+                        min-height: 23rem;
+                        &:hover {
+                            filter: blur(5px);
+                        }
+                        &:hover ~ .carousel-caption{
+                            display: flex
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    hr {
+        @include line;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .portfolio {
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 780px) {
+    .portfolio {
+        .portfolio_body {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        position: relative;
+                        img {
+                            padding: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .portfolio {
+        padding: 2rem 1rem;
+        .portolio_header {
+            p {
+                font-size: 1rem;
+            }
+            h1  {
+                font-size: 2rem;
+            }
+        }
+    }
+}
