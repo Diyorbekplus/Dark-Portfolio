@@ -9,8 +9,6 @@ import gimp from "../Images/gimp.png";
 import { FaCode, FaShapes } from "react-icons/fa";
 import { BiAnalyse } from "react-icons/bi";
 import avtotest from "../Images/avtotest.jpg";
-import searchFilter from "../Images/search-filter.jpg"
-import notesApp from "../Images/notes-app.jpg"
 import ecommerce from "../Images/ecommerce.jpg"
 export const services = [
     {
@@ -193,28 +191,12 @@ export const projects = [
         active: "active",
         img: ecommerce,
         title: "E-Commerce",
-        likes: 300,
-        link: "https://techgood.netlify.app/"
+        link: "https://diyuller-ecommerce.netlify.app/"
     },
     {
         id: 2,
         img: avtotest,
         title: "Avto Test App",
-        likes: 500,
-        link: "https://farhod-avtotest.netlify.app/"
-    },
-    {
-        id: 3,
-        img: notesApp,
-        title: "Notes App",
-        likes: 400,
-        link: "https://daily-notes-webapp.netlify.app/"
-    },
-    {
-        id: 4,
-        img: searchFilter,
-        title: "Search-filter",
-        likes: 100,
-        link: "https://search-filter-app.netlify.app/"
+        link: "https://diyuller-avto-test.netlify.app/"
     }
 ]

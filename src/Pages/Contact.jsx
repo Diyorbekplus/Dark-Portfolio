@@ -26,7 +26,7 @@ const Contact = () => {
             <address>
               <p>Phone : <span>+998 97 374 11 77</span></p>
               <p>Email : <span>diyorbekplus@gmail.com</span></p>
-              <p><BsGlobe2/> : <a target="_blank" rel="noreferrer"  href="https://linktr.ee/diyorbek_diyuller">Social Media</a></p>
+              <p><BsGlobe2/> : <a target="_blank" rel="noreferrer"  href="https://linktr.ee/diyorbekplus">Social Media</a></p>
             </address>
           </div>
         </div>
