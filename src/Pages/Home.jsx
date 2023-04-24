@@ -10,8 +10,7 @@ const Home = () => {
         <aside className="details">
             <h6>Welcome to my world</h6>
             <h1>Hi, I'm Diyorbek</h1>
-            <h1>Front-End Developer</h1>
-            <p className=' col-lg-10'>I am an junior front-end-developer who designs and implements user interface components for JavaScript-based web applications using the ReactJS open-source library.</p>
+            <p className='col-lg-10'>A React developer with a keen eye for detail and a deep love for crafting pixel-perfect user interfaces. With hands-on experience in modern front-end technologies, I strive to create visually appealing, highly performant, and user-centric web applications that leave a lasting impression.</p>
             <div className="buttons">
               <a href="#contact" className=''>Hire Me</a>
               <a className='download-btn' href={resume} download ><span>{<FaDownload/>} </span>Resume</a>
