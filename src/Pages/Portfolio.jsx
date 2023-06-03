@@ -1,12 +1,12 @@
 import React from 'react'
-import "../Style/css/Portfolio.css"
+import "../Style/css/Portfolio.min.css"
 import { projects } from '../Components/data'
 import Project from '../Components/Project'
 const Portfolio = () => {
   return (
     <section className="portfolio bg-dark" id="portfolio">
       <div className="portolio_header">
-        <p className="section_title">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
+        <p className="section_title">VISIT MY PORTFOLIO</p>
         <h1>My Portfolio</h1>
       </div>
       <div className="portfolio_body">

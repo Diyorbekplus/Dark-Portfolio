@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./Style/css/Main.css"
+import "./Style/css/Main.min.css"
 import Navbar from './Navbar/Navbar';
 import Home from './Pages/Home';
 import Features from './Pages/Features';

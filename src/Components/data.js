@@ -197,6 +197,6 @@ export const projects = [
         id: 2,
         img: avtotest,
         title: "Avto Test App",
-        link: "https://diyuller-avto-test.netlify.app/"
+        link: "https://autotest-app.netlify.app/"
     }
 ]

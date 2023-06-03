@@ -1,7 +1,7 @@
 import React from 'react'
-import "../Style/css/Home.css"
-import me from "../Images/me.png"
-import resume from "../resume.pdf";
+import "../Style/css/Home.min.css"
+import me from "../Images/me.jpg"
+import resume from "../Resume.pdf";
 import { FaDownload } from "react-icons/fa";
 const Home = () => {
   return (

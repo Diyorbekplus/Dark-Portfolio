@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Style/css/Skills.css"
+import "../Style/css/Skills.min.css"
 import Skill from '../Components/Skill'
 import { skills } from '../Components/data'
 const Skills = () => {

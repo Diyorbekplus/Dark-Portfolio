@@ -1,7 +1,7 @@
 import React from 'react'
 import { services } from '../Components/data'
 import Feature from '../Components/Feature'
-import "../Style/css/Features.css"
+import "../Style/css/Features.min.css"
 const Features = () => {
   return (
     <section className="features bg-dark" id='features'>

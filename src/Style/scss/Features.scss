@@ -1,18 +1,18 @@
 @import "./Variables.scss";
 #features {
     font-family: $mainFont ;
-    color: white;
+    color: $light;
     padding: 2rem 5rem;
     .features_header {
         p {
             font-size: 1.5rem;
             font-weight: 400;
-            color: coral;
+            color: $coral;
         }
         h1  {
             font-size: 3rem;
             font-weight: bold;
-            color: rgb(221, 250, 250);
+            color: $mainLight;
         }
     }
     .features_body {
@@ -30,24 +30,24 @@
             z-index: 0;
             border-radius:1rem;
             box-shadow:
-            inset 5px 15px 50px rgb(27, 27, 27),
-            inset -5px -15px 50px rgb(27, 27, 27),
-            inset -30px 10px 150px #101010,
-            inset 5px -15px 50px rgb(27, 27, 27);
+            inset 5px 15px 50px $darkShadow,
+            inset -5px -15px 50px $darkShadow,
+            inset -30px 10px 150px $darkShadow,
+            inset 5px -15px 50px $darkShadow;
 
             &:hover {
-                box-shadow:inset 5px 15px 100px rgb(22, 22, 22),
-                           inset -15px -5px 100px rgb(22, 22, 22);
+                box-shadow:inset 5px 15px 100px $mainDark,
+                           inset -15px -5px 100px $mainDark;
             }
             .icon {
                 font-size: 3.5rem;
-                color: coral;
+                color: $coral;
             }
             h2 {
                 font-size: 1.5rem;
                 margin: 1rem auto;
                 font-family: $mainFont;
-                color: rgb(221, 250, 250);
+                color: $mainLight;
             }
             p {
                 text-align: justify;
@@ -56,14 +56,14 @@
             }
             .readmore_btn {
                 background: none;
-                border: 2px solid #101010;
-                -webkit-text-stroke: .7px #999;
+                border: 2px solid $mainDark;
+                -webkit-text-stroke: .7px $darkText;
                 padding: 0.2rem 1rem;
                 font-size: 1.2rem;
                 border-radius: 1rem;
                 &:hover {
-                    background: coral;
-                    color: white;
+                    background: $coral;
+                    color: $light;
                 }
             }
         }

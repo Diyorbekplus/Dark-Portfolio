@@ -11,17 +11,17 @@
         p {
             font-size: 1.5rem;
             font-weight: 400;
-            color: coral;
+            color: $coral;
         }
         h1  {
             font-size: 3rem;
             font-weight: bold;
-            color: rgb(221, 250, 250);
+            color: $mainLight;
         }
     }
     .contact_body {
         padding: 5rem;
-        color: white;
+        color: $light;
         display: grid;
         grid-template-columns: 9fr 12fr;
         grid-gap: 2rem;
@@ -29,11 +29,11 @@
             border: none;
             border-radius: 1rem;
             padding: 2rem;
-            box-shadow: 5px 5px 20px rgb(10, 10, 10),
-            -15px -15px 10px #2c3234;
+            box-shadow: 5px 5px 20px $darkShadow,
+            -10px -10px 10px $darkShadow;
             .img_box {
                 overflow: hidden;
-                background: rgb(221, 250, 250);
+                background: $mainLight;
                 border-radius: 1rem;
                 img {
                 object-fit: contain;
@@ -49,22 +49,22 @@
                     font-weight: bold;
                     font-size: 2rem;
                     margin: 2rem 0;
-                    color:rgb(221, 250, 250)
+                    color:$mainLight
                 }
                 .text {
-                    color: rgb(77, 77, 84);
+                    color: $darkText;
                     font-size: 1.5rem;
                 }
                 address {
                     p{
-                        color: rgb(77, 77, 84);
+                        color: $darkText;
                         font-size: 1.5rem;
                         span {
-                            color: rgb(221, 250, 250);
+                            color: $mainLight;
                         }
                         a {
                             text-decoration: none;
-                            color: rgb(221, 250, 250);
+                            color: $mainLight;
                         }
                     }
                 }
@@ -74,19 +74,19 @@
             margin: 0rem;
             border-radius: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            box-shadow: 5px 5px 20px rgb(10, 10, 10),
-            -15px -15px 10px #2c3234;
+            box-shadow: 5px 5px 20px $darkShadow,
+            -10px -10px 10px $darkShadow;
             padding: 2rem;
             font-size: 1.5rem;
             input {
                 background: none;
-                outline: 1px solid coral;
+                outline: 1px solid $coral;
                 outline-style: none;
                 height: 5rem;
                 border: none;
-                box-shadow: inset 3px 3px 85px #161515;
+                box-shadow: inset 3px 3px 85px $mainDark;
                 font-size: 1.5rem;
-                color: #fff;
+                color: $light;
     
                 &:focus {
                     background:none;
@@ -94,13 +94,13 @@
             }
             textarea {
                 background: none;
-                outline: 1px solid coral;
+                outline: 1px solid $coral;
                 outline-style: none;
                 border: none;
-                box-shadow: inset 3px 3px 85px #161515;
+                box-shadow: inset 3px 3px 85px $mainDark;
                 min-height: 10rem;
                 font-size: 1.2rem;
-                color: #fff;
+                color: $light;
                 &:focus {
                     background:none;
                     outline-style: none;
@@ -111,15 +111,15 @@
                 text-align: center;
                 font-size: 1.2rem;
                 padding: 0.5rem 1rem;
-                box-shadow: 2px 3px 5px #1b1e1f,
-                -2px -3px 5px #2c3234;
+                box-shadow: 1px 1px 5px $mainDark,
+                -1px -1px 5px $darkShadow;
                 border: none;
                 border-radius: 0.5rem;
-                color: coral;
+                color: $coral;
                 &:hover {
-                    color: coral;
-                    box-shadow:inset 2px 3px 5px #1b1e1f,
-                    inset -2px -3px 5px #2c3234
+                    color: $coral;
+                    box-shadow:inset 1px 1px 10px $mainDark,
+                    -1px -1px 10px $darkShadow;
                 }
             }
         }
